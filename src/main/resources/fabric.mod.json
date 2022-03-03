@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "simple-health-bar",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Simple Health Bar",
+  "description": "A simple health bar.",
   "authors": [
     "Me!"
   ],
@@ -14,16 +14,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/simple-health-bar/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleModKt::init"
+    "client": [
+      "yukisawanya.simplehealthbar.SimpleHealthBar"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "simple-health-bar.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.8.7",
